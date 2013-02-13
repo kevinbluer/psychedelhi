@@ -172,7 +172,7 @@ h3 {
   right: 251px;
   top: 884px;
 }
- #main_box  p {
+#main_box p {
   margin: 5px 25px 10px 25px;
   padding-bottom:10px;
 }
@@ -182,12 +182,36 @@ h3 {
 #small_article h3 {
   margin-left: 25px;
 }
-
+#left_half {
+  float: left;
+  width: 68%;
+}
+.left_article h2 {
+  margin-top: 20px;
+  margin-left:0;
+}
+.left_article img {
+  float: left;
+  margin: 20px 20px 0 20px;
+}
+.pull-left {
+  float: left;
+}
 #right_half {
   float: right;
   width: 32%;
 }
-#left_half {
-  float: left;
-  width: 68%;
+#pop_articles {
+  list-style: none;
+  line-height: 30px;
+}
+footer {
+  margin: 50px 0 30px 0;
+  text-align: center;
+}
+footer #ad_banner {
+  margin: 30px;
+  background: #ccc;
+  padding: 5px;
+  width: 873px;
 }
