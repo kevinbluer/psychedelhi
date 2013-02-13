@@ -19,19 +19,6 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
-// environment configuration
-app.configure('development', function(){
-  mongoose.connect('mongodb://localhost/test');
-    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-
-});
-
-app.configure('production', function(){
-  mongoose.connect('mongodb://*****:*****@staff.mongohq.com:*****/*****');
-    app.use(express.errorHandler());
-
-});
-
 // ******************
 // register endpoints
 // ******************
