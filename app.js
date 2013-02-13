@@ -38,14 +38,7 @@ app.configure('production', function(){
 
 app.get('/', function(req, res) {
 	
-  Entity.find({type: "entity"}, function(err, items) {
-
-  	res.render('index.ejs', { 
-      layout: true,
-      items: items
-    });
-  	
-  });
+  res.send("Coming soon...");
 
 })
 
