@@ -1,11 +1,8 @@
 // for express
 var express = require('express');
-var mongoose = require('mongoose');
 
 // create the express instance
 var app = module.exports = express.createServer();
-
-var Entity = require('./models/entity.js');
 
 // configuration
 app.configure(function(){
@@ -28,64 +25,6 @@ app.get('/', function(req, res) {
   res.send("Coming soon...");
 
 })
-
-app.get('/upload', function(req, res) {
-  
-  res.render('upload.ejs', { 
-    layout: true,
-  });
-  
-})
-
-app.get('/map', function(req, res) {
-
-  Entity.find({type: "entity"}, function(err, items) {
-
-    res.render('map.ejs', { 
-      layout: true,
-      items: items
-    });
-    
-  });
-
-});
-
-app.post('/api/entity/add', function(req, res) {
-
-    var what = req.body.what;
-    var detail = req.body.detail;
-    var resources = req.body.resources;
-    var where = req.body.where;
-    var when = req.body.when;
-    var who = req.body.createdby;
-
-    var entity = new Entity({
-
-      what: what,
-      detail: detail,
-      resources: resources,
-      where: where,
-      when: when,
-      who: who,
-      created: { type: Date, default: Date.now }
-
-    });
-
-    entity.save(function(err, new_entity) {
-
-      if (err) {
-        console.log(err);
-        res.send({"saved": "nope"});
-      }
-      else {
-        console.log(new_entity);
-        res.send({"saved": "yep"});  
-      }
-      
-
-    });
-
-});
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
