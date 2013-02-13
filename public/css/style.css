@@ -28,12 +28,21 @@ nav ul {
 nav ul li {
   display: inline;
   padding: 10px;
+  -webkit-transition: background .2s;
+  -moz-transition: background .2s;
+  -o-transition: background .2s;
+  -ms-transition: background .2s;
+  transition: background .2s;
 }
 nav ul a {
   text-decoration: none;
   color: black;
 }
 nav ul a li.active {
+  background: #999;
+  color: white;
+}
+nav ul a li:hover {
   background: #999;
   color: white;
 }
@@ -74,7 +83,7 @@ header div#social_media {
 }
 #hero-shadow {
   position: absolute;
-  bottom: 90px;
+  top: 205px;
   right: 203px;
 }
 #hero_img img {
@@ -107,11 +116,21 @@ div .page_active {
 }
 
 #main_article {
-  margin-top: 30px;
+  margin-top: 50px;
   background: white;
+  height: 209px;
 }
 #main_article-shadow {
   position: absolute;
+  right: 203px;
+  top: 620px;
+}
+#main_article div h1 {
+  position: relative;
+  right: 70px;
+}
+#main_article h3 {
+  display: inline-block;
 }
 
 h1 {
@@ -147,6 +166,11 @@ h3 {
 #infographic {
   float: right;
   margin: 20px;
+}
+#infographic-shadow {
+  position: absolute;
+  right: 251px;
+  top: 884px;
 }
  #main_box  p {
   margin: 5px 25px 10px 25px;
