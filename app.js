@@ -22,7 +22,7 @@ app.configure(function(){
 
 app.get('/', function(req, res) {
 	
-  res.send(<a href="http://psychedelhi.herokuapp.com/index.html">Page</a>);
+  res.redirect('/index.html')
 
 })
 
