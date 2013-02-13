@@ -1,4 +1,4 @@
-node-scaffold
+Psychedelhi template
 =============
 
-Basic node.js scaffold using Express and Bootstrap
+Template site for Psyche-Delhi

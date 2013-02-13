@@ -1,0 +1,166 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("../images/bg.gif");
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #333232;
+}
+/***** NAV ******/
+nav{
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+nav ul {
+  width: 970;
+  margin: 0 auto;
+}
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+nav ul a li.active {
+  background: #999;
+  color: white;
+}
+#container {
+  width: 970;
+  margin: 0 auto;
+}
+/****** HEADER ******/
+header > img {
+  float: left;
+  margin:30px 30px 30px 0;
+}
+header > img.shadow {
+  position: relative;
+  right: 166px;
+  top: 3px;
+}
+header div#search_bar {
+  float: left;
+  margin-top: 65px;
+  margin-left:100px; 
+}
+#search_bar input {
+  height: 39px;
+  width: 275px;
+  float: left
+}
+header div#social_media {
+  float: right;
+  margin-top: 75px;
+}
+
+/******** MAIN *******/
+
+#hero {
+  background: white;
+  height: 320px;
+}
+#hero_img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border: 1px solid black;
+  width: 950px;
+  height: 300px;
+}
+#hero_img p {
+  position: relative;
+  top: 220px;
+  right: 22px;
+  background: rgba(0,0,0,.7);
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+#pagination {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+div.pagination_box {
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin-right: 3px; 
+  background: rgba(0,0,0,.7);
+}
+div .page_active {
+  background: red;
+}
+
+#main_article {
+  margin-top: 30px;
+  background: white;
+}
+
+h1 {
+  margin: 10px 0 0 15px;
+  padding: 5px 10px;
+  background: red;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+h2 {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px 0 0 25px
+}
+h3 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 5px 15px 0 5px;
+  color: #666;
+}
+ #main_article  p {
+  margin: 5px 25px 10px 25px;
+  padding-bottom:10px;
+}
+#main_box {
+  background: white;
+}
+#infographic {
+  float: right;
+  width: 30%;
+  height: 200px;
+}
+ #main_box  p {
+  margin: 5px 25px 10px 25px;
+  padding-bottom:10px;
+}
+#small_article h2 , h3 {
+  display: block;
+}
+#small_article h3 {
+  margin-left: 25px;
+}
+
+#right_half {
+  float: right;
+  width: 32%;
+}
+#left_half {
+  float: left;
+  width: 68%;
+}
