@@ -11,7 +11,7 @@
   padding: 0;
 }
 body {
-  background: url("../images/bg.gif");
+  background: url("../img/bg.gif");
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #333232;
 }
@@ -38,7 +38,7 @@ nav ul a li.active {
   color: white;
 }
 #container {
-  width: 970;
+  width: 960;
   margin: 0 auto;
 }
 /****** HEADER ******/
@@ -47,14 +47,14 @@ header > img {
   margin:30px 30px 30px 0;
 }
 header > img.shadow {
-  position: relative;
-  right: 166px;
-  top: 3px;
+  position: absolute;
+  left: 384px;
+  top: 41px;
 }
 header div#search_bar {
   float: left;
   margin-top: 65px;
-  margin-left:100px; 
+  margin-left:50px; 
 }
 #search_bar input {
   height: 39px;
@@ -69,38 +69,38 @@ header div#social_media {
 /******** MAIN *******/
 
 #hero {
-  background: white;
-  height: 320px;
+  background-color: white;
+  height: 400px;
 }
-#hero_img {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  border: 1px solid black;
-  width: 950px;
-  height: 300px;
+#hero-shadow {
+  position: absolute;
+  bottom: 90px;
+  right: 203px;
+}
+#hero_img img {
+  margin: 13px;
 }
 #hero_img p {
   position: relative;
-  top: 220px;
-  right: 22px;
-  background: rgba(0,0,0,.7);
+  bottom: 90px;
+  left: 13px;
+  background: rgba(255,255,255,.3);
   color: white;
   display: inline-block;
   font-size: 20px;
   padding: 10px;
 }
 #pagination {
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
+  position: relative;
+  bottom: 77px;
+  left: 863px;
 }
 div.pagination_box {
   height: 20px;
   width: 20px;
   float: left;
   margin-right: 3px; 
-  background: rgba(0,0,0,.7);
+  background: rgba(255,255,255,.3);
 }
 div .page_active {
   background: red;
@@ -109,6 +109,9 @@ div .page_active {
 #main_article {
   margin-top: 30px;
   background: white;
+}
+#main_article-shadow {
+  position: absolute;
 }
 
 h1 {
@@ -139,11 +142,11 @@ h3 {
 }
 #main_box {
   background: white;
+  margin-top: 30px;
 }
 #infographic {
   float: right;
-  width: 30%;
-  height: 200px;
+  margin: 20px;
 }
  #main_box  p {
   margin: 5px 25px 10px 25px;
