@@ -6,9 +6,7 @@
   clear: both;
   height: 0;
 }
-/*.shadow {
-  box-shadow: 
-}*/
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +16,9 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #333232;
 }
-/***** NAV ******/
+/*================================================*
+ * NAV                                            *
+ *================================================*/
 nav{
   padding: 10px;
   background: #fff;
@@ -53,7 +53,9 @@ nav ul a li:hover {
   width: 960;
   margin: 0 auto;
 }
-/****** HEADER ******/
+/*================================================*
+ * HEADER                                         *
+ *================================================*/
 header > img {
   float: left;
   margin:30px 30px 30px 0;
@@ -73,8 +75,9 @@ header div#social_media {
   float: right;
   margin-top: 75px;
 }
-
-/******** MAIN *******/
+/*================================================*
+ * MAIN                                           *
+ *================================================*/
 
 #hero {
   background-color: white;
@@ -138,13 +141,13 @@ h1 {
 }
 h2 {
   display: inline-block;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   margin: 5px 0 0 25px
 }
 h3 {
   display: inline-block;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: lighter;
   margin: 5px 15px 0 5px;
   color: #666;
@@ -215,12 +218,9 @@ footer #ad_banner {
   width: 873px;
 }
 
-
-
-
-/*==================================================
- * shadow
- * ===============================================*/
+/*================================================*
+ * shadow                                         *
+ *================================================*/
 .shadow
 {
   position: relative;
@@ -233,12 +233,12 @@ footer #ad_banner {
   bottom: 18px;
   left: 10px;
   width: 80%;
-  top: 30%;
+  top: 70%;
   max-width:300px;
-  background: #777;
-  -webkit-box-shadow: -15px 10px 30px #777;
-  -moz-box-shadow: -15px 10px 30px #777;
-  box-shadow: -15px 10px 30px #777;
+  background: rgba(0,0,0,.4);
+  -webkit-box-shadow: -10px 10px 10px rgba(0,0,0,.4);
+  -moz-box-shadow: -10px 10px 10px rgba(0,0,0,.4);
+  box-shadow: -10px 10px 10px rgba(0,0,0,.4);
   -webkit-transform: rotate(-6deg) skew(-10deg);
   -moz-transform: rotate(-6deg) skew(-10deg);
   -o-transform: rotate(-6deg) skew(-10deg);
@@ -247,9 +247,9 @@ footer #ad_banner {
 }
 .shadow:after
 {
-  -webkit-box-shadow: 15px 10px 30px #777;
-  -moz-box-shadow: 15px 10px 30px #777;
-  box-shadow: 15px 10px 30px #777;
+  -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+  -moz-box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+  box-shadow: 10px 10px 10px rgba(0,0,0,.4);
   -webkit-transform: rotate(6deg) skew(10deg);
   -moz-transform: rotate(6deg) skew(10deg);
   -o-transform: rotate(6deg) skew(10deg);
@@ -258,3 +258,68 @@ footer #ad_banner {
   right: 10px;
   left: auto;
 }
+
+
+/*====================================*
+ * News page css                      *
+ *====================================*/
+
+#holder {
+  background: white;
+  height: 110px;
+}
+#article_holder {
+  background: white;
+  text-align: center;
+  height: 110px;
+  overflow: hidden;
+}
+#article_holder div {
+  float: left;
+  width:200px;
+  padding: 2px 0;
+  background: #ccc;
+  margin: 20px 0 0 90px
+}
+#article_holder h1 {
+  position: relative;
+  bottom: 95px;
+  left: 27px;
+}
+
+#mid_box {
+  margin-top: 50px;
+  background: white;
+  height: 500px;
+}
+#mid_box div h3 {
+  display: inline-block;
+}
+.article {
+  margin: 25px;
+  font-size: 16px;
+}
+#bottom_box {
+  background: white;
+  height: 550px;
+  margin-top: 50px; 
+}
+#bottom_box div h3 {
+  display: inline-block;
+}
+#bottom_box div h2 {
+  margin: 0;
+}
+#comment_box {
+  text-align: center;
+}
+textarea {
+  border: 0 solid rgba(0,0,0,.2);
+  box-shadow: 0px 0px 4px inset;
+  background: #eee;
+  width: 912.5px;
+  height: 200px;
+  resize: none
+}
+
+
