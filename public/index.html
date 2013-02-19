@@ -20,7 +20,6 @@
   <div id="container">
     <header class="clearfix">
       <img src="img/logo.png">
-      <img src="img/logo-shadow.png" class="shadow">
       <div id="search_bar">
         <input placeholder="Search...">
         <a href="#"><img src="img/search.png"></a>
@@ -32,7 +31,7 @@
       </div>
     </header>
     <div id="main">
-      <div id="hero">
+      <div id="hero" class="shadow">
         <div id="hero_img">
           <img src="img/hero-picture.jpg">
           <p>Lorem ipsum dolor sit amet.</p>
@@ -43,10 +42,9 @@
           </div>
         </div>
       </div><!-- #hero -->
-      <img id="hero-shadow" src="img/hero-shadow.png">
-      <div id="main_article">
+      <div id="main_article" class="shadow">
         <div>
-          <h1>Section heading</h1>
+          <h1 class="shadow">Section heading</h1>
         </div>
         <h2>Lorem ipsum is simply dummy text</h2>
         <h3>by SubTitle</h3>
@@ -57,10 +55,11 @@
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div><!-- #main_article -->
-      <img id="main_article-shadow" src="img/article1-shadow.png">
+      <div id="main_box_wrapper" class="shadow">
       <div id="main_box" class="clearfix">
-        <img src="img/infographic.png" id="infographic">
-        <img id="infographic-shadow" src="img/infographic-shadow.png">
+        <div id="infographic">
+          <img src="img/infographic.png" class="shadow">
+        </div>
         <div id="small_article">
           <div>
             <h1>Section heading</h1>
@@ -73,10 +72,9 @@
           <h1>Section heading</h1>
           <div class="left_article">
             <img src="img/article3.jpg">
-              <h2>Section Title of article</h2>
-              <h3>by SubTitle</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
+            <h2>Section Title of article</h2>
+            <h3>by SubTitle</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div class="left_article">
             <img src="img/article4.jpg">
@@ -106,6 +104,7 @@
         </div><!-- #right_half -->
       </div><!-- #main_box -->
     </div><!-- #main -->
+    </div>
     <footer>
       <div id="ad_banner">
         <img src="img/ad_banner.jpg">

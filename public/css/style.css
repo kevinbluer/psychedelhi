@@ -1,11 +1,14 @@
 .clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
+/*.shadow {
+  box-shadow: 
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -54,11 +57,7 @@ nav ul a li:hover {
 header > img {
   float: left;
   margin:30px 30px 30px 0;
-}
-header > img.shadow {
-  position: absolute;
-  left: 384px;
-  top: 41px;
+  z-index: 1;
 }
 header div#search_bar {
   float: left;
@@ -80,11 +79,6 @@ header div#social_media {
 #hero {
   background-color: white;
   height: 400px;
-}
-#hero-shadow {
-  position: absolute;
-  top: 205px;
-  right: 203px;
 }
 #hero_img img {
   margin: 13px;
@@ -159,6 +153,9 @@ h3 {
   margin: 5px 25px 10px 25px;
   padding-bottom:10px;
 }
+#main_box_wrapper {
+  position: relative;
+}
 #main_box {
   background: white;
   margin-top: 30px;
@@ -166,11 +163,6 @@ h3 {
 #infographic {
   float: right;
   margin: 20px;
-}
-#infographic-shadow {
-  position: absolute;
-  right: 251px;
-  top: 884px;
 }
 #main_box p {
   margin: 5px 25px 10px 25px;
@@ -184,7 +176,7 @@ h3 {
 }
 #left_half {
   float: left;
-  width: 68%;
+  width: 65%;
 }
 .left_article h2 {
   margin-top: 20px;
@@ -199,11 +191,18 @@ h3 {
 }
 #right_half {
   float: right;
-  width: 32%;
+  width: 35%;
+}
+#right_half h1 {
+  margin: 10px 0;
 }
 #pop_articles {
   list-style: none;
-  line-height: 30px;
+  line-height: 40px;
+}
+#video_box {
+
+  margin-right: 0px;
 }
 footer {
   margin: 50px 0 30px 0;
@@ -214,4 +213,48 @@ footer #ad_banner {
   background: #ccc;
   padding: 5px;
   width: 873px;
+}
+
+
+
+
+/*==================================================
+ * shadow
+ * ===============================================*/
+.shadow
+{
+  position: relative;
+}
+.shadow:before, .shadow:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 18px;
+  left: 10px;
+  width: 80%;
+  top: 30%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: -15px 10px 30px #777;
+  -moz-box-shadow: -15px 10px 30px #777;
+  box-shadow: -15px 10px 30px #777;
+  -webkit-transform: rotate(-6deg) skew(-10deg);
+  -moz-transform: rotate(-6deg) skew(-10deg);
+  -o-transform: rotate(-6deg) skew(-10deg);
+  -ms-transform: rotate(-6deg) skew(-10deg);
+  transform: rotate(-6deg) skew(-10deg);
+}
+.shadow:after
+{
+  -webkit-box-shadow: 15px 10px 30px #777;
+  -moz-box-shadow: 15px 10px 30px #777;
+  box-shadow: 15px 10px 30px #777;
+  -webkit-transform: rotate(6deg) skew(10deg);
+  -moz-transform: rotate(6deg) skew(10deg);
+  -o-transform: rotate(6deg) skew(10deg);
+  -ms-transform: rotate(6deg) skew(10deg);
+  transform: rotate(6deg) skew(10deg);
+  right: 10px;
+  left: auto;
 }
